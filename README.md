@@ -1,2 +1,1 @@
-# some-static-websites
-some static websites created during practice
+#some front-end projects using html css and js
