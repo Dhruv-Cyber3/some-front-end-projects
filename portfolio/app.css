@@ -1,0 +1,242 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Mono", monospace;
+}
+
+#navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #f05454;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+#navbar a {
+  text-decoration: none;
+  padding: 0;
+  margin: 0 30px 0 30px;
+}
+#welcome-section {
+  height: 100vh;
+  background-color: #222831;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome-section h1 {
+  font-size: 4rem;
+  color: white;
+}
+
+#welcome-section h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #f05454;
+}
+
+#projects {
+  height: auto;
+  background-color: #30475e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+#projects h2 {
+  margin: 60px auto 10px auto;
+  color: white;
+  text-decoration: underline;
+  font-size: 3rem;
+}
+#tiles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 30px;
+  width: 80%;
+}
+#tiles .project-tile {
+  height: 45vh;
+  width: 40vh;
+  padding: 0;
+  margin: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 2;
+  flex-grow: 1.5;
+}
+
+.tile-img {
+  height: inherit;
+  width: inherit;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+.tile-caption {
+  padding: 1.5rem 0.5rem;
+  margin: 0 auto;
+  background-color: #222831;
+  width: inherit;
+  text-align: center;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.code {
+  color: #222831;
+  transition: color 0.3s ease-out;
+}
+.project-tile:hover .code {
+  color: #ff7f50;
+}
+
+.show-all {
+  background-color: #222831;
+  border: none;
+  padding: 1rem 1rem;
+  margin: 10px auto 40px auto;
+  color: white;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  transition: background-color 0.5s ease-out;
+}
+
+.show-all:hover {
+  background-color: #f05454;
+}
+
+#contact {
+  height: 80vh;
+  background-color: #222831;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+#contact h1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+#contact h5 {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #f05454;
+}
+
+.github-btn {
+  text-decoration: none;
+  padding: 10px;
+  margin: 50px;
+  color: white;
+  font-size: 2em;
+  transition: transform 0.3s ease-out;
+}
+
+.github-btn:hover {
+  transform: translateY(8px);
+}
+
+@media (max-width: 730px) {
+  #welcome-section h1 {
+    font-size: 2rem;
+  }
+
+  #welcome-section h3 {
+    font-size: 1rem;
+  }
+
+  #projects h2 {
+    font-size: 2rem;
+  }
+
+  #contact h1 {
+    font-size: 1.5rem;
+  }
+
+  #contact h5 {
+    font-size: 1rem;
+  }
+
+  .github-btn {
+    font-size: 1.5rem;
+  }
+
+  .disclamer {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 440px) {
+  #navbar {
+    font-size: 1rem;
+  }
+
+  #welcome-section h1 {
+    font-size: 1.5rem;
+  }
+
+  #welcome-section h3 {
+    font-size: 1rem;
+  }
+
+  #projects h2 {
+    font-size: 1.5rem;
+  }
+
+  .tile-caption {
+    font-size: 1rem;
+    padding: 1rem 0.5rem;
+    width: inherit;
+  }
+
+  #projects .project-tile {
+    height: inherit;
+    width: inherit;
+  }
+
+  #contact h1 {
+    font-size: 1.5rem;
+  }
+
+  #contact h5 {
+    font-size: 1rem;
+  }
+
+  .github-btn {
+    font-size: 1.5rem;
+  }
+
+  .disclamer {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 335px) {
+  #navbar {
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin: 0px auto;
+    padding: 10px;
+  }
+}
